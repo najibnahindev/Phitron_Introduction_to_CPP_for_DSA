@@ -15,13 +15,16 @@ class student
     }
 };
 
+student* fun()
+{
+    student *karim = new student(2, 5, 5.00);
+    return karim;
+}
+
 int main()
 {
-    student rahim(25, 5, 5.00);
-    student* karim = new student(10, 4, 3.5);
-
-    cout << rahim.roll << " " << rahim.cls << " " << rahim.gpa << endl;
-    cout << karim->roll << " " << karim->cls << " " << karim->gpa << endl;
+    student *p = fun();
+    cout << p->roll << " " << p->cls << " " << p->gpa << endl;
 
     return 0;
 }
