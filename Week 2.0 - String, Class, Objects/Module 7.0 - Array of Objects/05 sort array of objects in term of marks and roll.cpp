@@ -10,9 +10,11 @@ class student
 };
 bool comp(student l, student r)
 {
-    if(l.marks < r.marks) return true;
-    else if(l.marks > r.marks)  return false;
-    else return l.roll < r.roll;
+    // if(l.marks < r.marks) return true;
+    // else if(l.marks > r.marks)  return false;
+    // else return l.roll < r.roll;
+    
+    return (l.marks == r.marks)? l.roll < r.roll : l.marks < r.marks;
 }
 int main()
 {
